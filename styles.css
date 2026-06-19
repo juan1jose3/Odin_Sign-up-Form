@@ -1,0 +1,78 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1440,20,1.333,5,3,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --step--3: clamp(0.5277rem, 0.5933rem + -0.0728vw, 0.5787rem);
+  --step--2: clamp(0.6944rem, 0.6919rem + 0.0129vw, 0.7035rem);
+  --step--1: clamp(0.8333rem, 0.8035rem + 0.1491vw, 0.9377rem);
+  --step-0: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  --step-1: clamp(1.2rem, 1.0668rem + 0.6661vw, 1.6663rem);
+  --step-2: clamp(1.44rem, 1.2168rem + 1.1159vw, 2.2211rem);
+  --step-3: clamp(1.728rem, 1.3758rem + 1.7611vw, 2.9607rem);
+  --step-4: clamp(2.0736rem, 1.5384rem + 2.6758vw, 3.9467rem);
+  --step-5: clamp(2.4883rem, 1.6962rem + 3.9608vw, 5.2609rem);
+
+  --charcoal:#111827;
+  --form-labels:#4B5563;
+  --back: #F3F4F6;
+}
+
+
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    color: var(--charcoal);
+    font-size: var(--step-1);
+    background-color: var(--back);
+}
+
+h1{
+    font-size: var(--step-1);
+}
+
+.main-container{
+    display: flex;
+    
+}
+
+.img-back{
+    display: block;
+    width: 33vw;
+    height: 100vh;
+}
+
+
+.form-section{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8%;
+  
+}
+
+
+.form-title-wrapper{
+    width: 66%;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+.form-container{
+    background-color: #FFFFFF;
+}
+
+
