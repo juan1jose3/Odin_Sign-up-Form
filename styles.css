@@ -22,8 +22,14 @@
   --step-5: clamp(2.4883rem, 1.6962rem + 3.9608vw, 5.2609rem);
 
   --charcoal:#111827;
-  --form-labels:#4B5563;
-  --back: #F3F4F6;
+  --form-labels:#3b4252;
+  --back: #d8dee9;
+  --form-back:#eceff4;
+  --input-back:#e5e9f0;
+  --border:#4c566a;
+  --outer-border:#434c5e;
+  --form-focus:#81a1c1;
+  --button-color:#2e3440;
 }
 
 
@@ -34,10 +40,12 @@
 }
 
 body{
+    margin: 0;
     font-family: 'Roboto',sans-serif;
     color: var(--charcoal);
     font-size: var(--step-1);
     background-color: var(--back);
+
 }
 
 h1{
@@ -45,34 +53,106 @@ h1{
 }
 
 .main-container{
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     
 }
 
 .img-back{
     display: block;
-    width: 33vw;
-    height: 100vh;
+    width: 30vw;
+    object-fit: cover;
+    max-height: 100vh;
+    
 }
+
+@media (min-width:600px){
+    .img-back{
+        display: block;
+        width: 38vw;
+        max-height: 100vh;
+        
+        
+    }
+}
+
 
 
 .form-section{
     display: flex;
     justify-content: space-around;
-    padding-top: 8%;
+    padding-top: var(--step-2);
   
 }
 
 
 .form-title-wrapper{
-    width: 66%;
+    width: 70%;
     text-align: left;
     line-height: 1.5;
 }
 
 
 .form-container{
-    background-color: #FFFFFF;
+    border: 2px var(--outer-border) solid;
+    border-radius: 8px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: var(--form-back);
+    padding-bottom: 2rem;
+
 }
+
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    border: 2px var(--border) solid;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+input:focus{
+    outline: none;
+    border-color: var(--form-focus);
+}
+
+
+.info-container{
+    margin-top:2rem;
+}
+
+.custom-button{
+    border: 2px var(--button-color) solid;
+    background-color: var(--button-color);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 12px 30px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover{
+    border-color:var(--button-color);
+    background-color: transparent;
+    color: var(--charcoal);
+}
+
 
 
