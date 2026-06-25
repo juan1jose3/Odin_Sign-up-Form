@@ -11,7 +11,16 @@
     <div class="main-container">
         
         <section class="image-section">
-            
+            <div class="dark-overlay">
+                <div class="odin-logo">
+                    <div class="logo-info">
+                        <img src="images/odin-lined.png" alt="" class="logo">
+                        <div>
+                            <h1 class="special-logo-text">Odin</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
            
         </section>
 
@@ -35,35 +44,38 @@
 
                             <fieldset class="form-group">
                                 <div>
-                                    <label for=""></label>
-                                    <input type="text" name="" id="">
+                                    <label for="first_name">First Name</label>
+                                    <input type="text" name="firstName" id="first_name" required>
                                 </div>
     
                                 <div>
-                                    <label for=""></label>
-                                    <input type="text">
+                                    <label for="user_email">Email</label>
+                                    <input type="email" id="user_email" name="userEmail" required>
                                 </div>
     
                                 <div>
-                                    <label for=""></label>
-                                    <input type="text">
+                                    <label for="user_password">Password</label>
+                                    <input type="password" id="user_password" name="userPassword" required class="special">
                                     
                                 </div>
                             </fieldset>
     
                             <fieldset class="form-group">
                                 <div>
-                                    <label for=""></label>
-                                    <input type="text">
+                                    <label for="last_name">Last Name</label>
+                                    <input type="text" name="lastName" id="last_name" required>
                                 </div>
         
                                 <div>
-                                    <label for=""></label>
-                                    <input type="text">
+
+                                    <label for="user_phone">Phone Number</label>
+                                    <input type="tel" id="user_phone" name="userPhone" required>
                                 </div>
         
                                 <div>
-                                    <label for=""></label><input type="text">
+                                    <label for="confirn_pass">Confirm Password</label>
+                                    <input type="password" id="confirm_pass" name="confirmPass" required class="special">
+                                  
                                 </div>
                             </fieldset>
                         </div>    
