@@ -11,6 +11,7 @@
     <div class="main-container">
         
         <section class="image-section">
+            
             <div class="dark-overlay">
                 <div class="odin-logo">
                     <div class="logo-info">
@@ -20,6 +21,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="credits">
+                <p>
+                    Image by <a href="https://unsplash.com/photos/a-boat-sitting-on-top-of-a-beach-next-to-a-body-of-water-7MpUE1Y1C58"> Marco De Gregorio </a> From <a href="https://unsplash.com/s/photos/viking-ship">Unsplash</a>
+                </p>
             </div>
            
         </section>
@@ -45,7 +51,7 @@
                             <fieldset class="form-group">
                                 <div>
                                     <label for="first_name">First Name</label>
-                                    <input type="text" name="firstName" id="first_name" required>
+                                    <input type="text" name="firstName" id="first_name" pattern="^[a-zA-Z]+$" minlength="2" required>
                                 </div>
     
                                 <div>
@@ -55,7 +61,7 @@
     
                                 <div>
                                     <label for="user_password">Password</label>
-                                    <input type="password" id="user_password" name="userPassword" required class="special">
+                                    <input type="password" id="user_password" name="userPassword" required class="special" minlength="1" maxlength="120">
                                     
                                 </div>
                             </fieldset>
@@ -63,18 +69,18 @@
                             <fieldset class="form-group">
                                 <div>
                                     <label for="last_name">Last Name</label>
-                                    <input type="text" name="lastName" id="last_name" required>
+                                    <input type="text" name="lastName" id="last_name" pattern="^[a-zA-Z]+$"   minlength="2" required>
                                 </div>
         
                                 <div>
 
                                     <label for="user_phone">Phone Number</label>
-                                    <input type="tel" id="user_phone" name="userPhone" required>
+                                    <input type="tel" id="user_phone" name="userPhone" pattern="[0-9+\-() ]+" required>
                                 </div>
         
                                 <div>
                                     <label for="confirn_pass">Confirm Password</label>
-                                    <input type="password" id="confirm_pass" name="confirmPass" required class="special">
+                                    <input type="password" id="confirm_pass" name="confirmPass" required class="special" minlength="1" maxlength="120">
                                   
                                 </div>
                             </fieldset>
@@ -83,7 +89,7 @@
 
                     <div class="info-container">
                         <button type="submit" class="custom-button">Create Account</button>
-                        <p>Already have an account? Log in</p>
+                        <p>Already have an account? <strong>Log in</strong></p>
                     </div>
                 </form>
             </div>
